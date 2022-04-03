@@ -1,42 +1,37 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterfire_demo/Card1.dart';
-import 'package:flutterfire_demo/screens/Profile_page.dart';
-import 'package:flutterfire_demo/screens/prices.dart';
-import 'package:flutterfire_demo/utils/authentication_client.dart';
+import 'package:haysters_laundromat/card1.dart';
+import 'package:haysters_laundromat/help.dart';
+import 'package:haysters_laundromat/order/order.dart';
+import 'package:haysters_laundromat/screens/login_page_account.dart';
+import 'package:haysters_laundromat/screens/prices.dart';
 
-class homePage extends StatefulWidget {
-  final User user;
+class HomePage extends StatefulWidget {
+  final User? user;
 
-  const homePage({
+  const HomePage({
     Key? key,
     required this.user,
   }) : super(key: key);
 
   @override
-  State<homePage> createState() => _homePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _homePageState extends State<homePage> {
-  final _authClient = AuthenticationClient();
-
-  bool _isProgress = false;
+class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
 
   static List<Widget> pages = <Widget>[
-    home(
-      user: user,
+    const Home(),
+    const DashboardScreen(
+      title: 'order',
     ),
-    Container(color: Colors.amber),
-    ProfilePage(
-      user: user,
-    ),
-    Container(color: Colors.amber),
-    prices(title: 'prices'),
-    Container(color: Colors.amber),
+    const Login(),
+    const Prices(),
+    const Help(
+      title: 'help',
+    )
   ];
-
-  static get user => null;
 
   void _onItemTapped(int index) {
     setState(() {
@@ -58,31 +53,27 @@ class _homePageState extends State<homePage> {
         selectedItemColor: Theme.of(context).textSelectionTheme.selectionColor,
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
-        items: <BottomNavigationBarItem>[
-          const BottomNavigationBarItem(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
             icon: Icon(Icons.home),
             backgroundColor: Colors.black,
-            label: 'Card',
+            label: 'home',
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart),
-            label: 'Card2',
+            label: 'cart',
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.people),
-            label: 'Card3',
+            label: 'account',
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.money_rounded),
-            label: 'Card4',
+            label: 'prices',
           ),
-          const BottomNavigationBarItem(
-            icon: Icon(Icons.wallet_travel_rounded),
-            label: 'Card5',
-          ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.help),
-            label: 'Card6',
+            label: 'help',
           ),
         ],
       ),

@@ -1,16 +1,10 @@
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterfire_demo/Card1.dart';
-import 'package:flutterfire_demo/firebase_options.dart';
-import 'package:flutterfire_demo/home.dart';
-import 'package:flutterfire_demo/screens/login_page.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:haysters_laundromat/screens/onboarding.dart';
 
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  FirebaseApp defaultApp = await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -20,11 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FlutterFire Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
-      ),
-      home: LoginPage(),
-    );
+        title: 'FlutterFire Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: const Onboarding());
   }
 }

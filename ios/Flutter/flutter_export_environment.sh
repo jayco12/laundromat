@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=C:\Users\Lana\Downloads\flutter_windows_2.8.1-stable-1\flutter"
-export "FLUTTER_APPLICATION_PATH=C:\Users\Lana\Downloads\flutter_firebase_auth-main"
+export "FLUTTER_ROOT=C:\Users\Lana\Documents\Programming set ups\flutter"
+export "FLUTTER_APPLICATION_PATH=C:\Users\Lana\Desktop\haysters_laundromat"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib\main.dart"
 export "FLUTTER_BUILD_DIR=build"

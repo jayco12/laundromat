@@ -50,7 +50,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyA2QLn61DvJ3w6-XD8Z0f3MKVuwToFkCAI',
-    appId: '1:113720634936:android:6efa2b55b53412f86bc0cd',
+    appId: '1:113720634936:android:7effc70e3b1864676bc0cd',
     messagingSenderId: '113720634936',
     projectId: 'laundromat-607aa',
     databaseURL: 'https://laundromat-607aa-default-rtdb.firebaseio.com',
@@ -59,12 +59,12 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDAFtBW6NMrOMesCXRAck2BNsG68C8QwgU',
-    appId: '1:113720634936:ios:d8d16db3eea7d4176bc0cd',
+    appId: '1:113720634936:ios:736bd9407d19f0e56bc0cd',
     messagingSenderId: '113720634936',
     projectId: 'laundromat-607aa',
     databaseURL: 'https://laundromat-607aa-default-rtdb.firebaseio.com',
     storageBucket: 'laundromat-607aa.appspot.com',
-    iosClientId: '113720634936-etoinjg29qqn7q4lt1lo3562ohh2sctf.apps.googleusercontent.com',
-    iosBundleId: 'com.laundromat.laundroma',
+    iosClientId: '113720634936-lmk7kao9qonkqqspct4t23dluc6drlsp.apps.googleusercontent.com',
+    iosBundleId: 'com.laundr',
   );
 }

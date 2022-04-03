@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.souvikbiswas.flutterfire_demo">
+    package="com.example.haysters_laundromat">
    <application
-        android:label="flutterfire_demo"
+        android:label="haysters_laundromat"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

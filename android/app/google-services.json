@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "113720634936",
+    "project_id": "laundromat-607aa",
+    "storage_bucket": "laundromat-607aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113720634936:android:7f356fbd2ab7ab476bc0cd",
+        "android_client_info": {
+          "package_name": "com.example.haysters_laundromat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113720634936-6nnfcd5ii20t9hh4qkkmcc5kj2vrtl3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2QLn61DvJ3w6-XD8Z0f3MKVuwToFkCAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113720634936-6nnfcd5ii20t9hh4qkkmcc5kj2vrtl3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
